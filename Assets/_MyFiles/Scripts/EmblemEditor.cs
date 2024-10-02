@@ -163,32 +163,14 @@ public class EmblemEditor : MonoBehaviour
     #region Layer Att
     public void MoveSelectedObjectUp()
     {
-        if (mSelectedObj != null)
-        {
-            int currentIndex = mSpritesInScene.IndexOf(mSelectedObj);
-            if (currentIndex > 0)
-            {
-                GameObject temp = mSpritesInScene[currentIndex - 1];
-                mSpritesInScene[currentIndex - 1] = mSpritesInScene[currentIndex];
-                mSpritesInScene[currentIndex] = temp;
-                UpdateIndexNum();
-            }
-        }
+        Debug.Log("do nothing");
+        return;
     }
 
     public void MoveSelectedObjectDown()
     {
-        if (mSelectedObj != null)
-        {
-            int currentIndex = mSpritesInScene.IndexOf(mSelectedObj);
-            if (currentIndex < mSpritesInScene.Count - 1)
-            {
-                GameObject temp = mSpritesInScene[currentIndex + 1];
-                mSpritesInScene[currentIndex + 1] = mSpritesInScene[currentIndex];
-                mSpritesInScene[currentIndex] = temp;
-                UpdateIndexNum();
-            }
-        }
+        Debug.Log("do nothing");
+        return;
     }
 
     private void UpdateIndexNum()
